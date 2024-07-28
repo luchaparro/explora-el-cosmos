@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="mainHeader">
+        <section class="header">
+            <section>
+                <div>
+                    <ul class="explorar">
+                        <div>
+                            <li>
+                                <a href="#">Explorar</a>
+                            </li>
+                        </div>
+                        <div>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/img/iconos/flechitaAbajo.png" alt="flechitaAbajo">
+                                    <ul class="explorarVertical">
+                                        <li><a href="./pages/kepler.html">Kepler</a></li>
+                                        <li><a href="./pages/luna.html">Luna</a></li>
+                                        <li><a href="./pages/marte.html">Marte</a></li>
+                                        <li><a href="#">Europa</a></li>
+                                        <li><a href="#">Titán</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ul id="inicio">
+                        <li><a href="../index.html"><img src="../assets/img/iconos/iconoEmpresa.png" alt="inicio"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ul class="masInfo">
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Galería</a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <table border="4">
+                    <div>
+                        <thead>
+                            <tr>
+                                <th><h1>Seleccione su pasaje</h1></th>
+                            </tr>
+                        </thead>
+                    </div>
+                    <div>
+                        <tbody>
+                            <div>
+                                <tr>
+                                    <th>Fecha de ida</th>
+                                    <td><input type="date" name="fechaIda"</td>
+                                </tr>
+                                <tr>
+                                    <th>Fecha de vuelta</th>
+                                    <td><input type="date" name="fechaVuelta"></td>
+                                </tr>
+                                <tr>
+                                    <th>Destino</th>
+                                    <td>
+                                        <select name="destino">
+                                            <option value="">Luna</option>
+                                            <option value="">Marte</option>
+                                            <option value="">Kepler-22b</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </div>
+                            <div>
+                                <tr>
+                                    <th>Padres</th>
+                                    <td><select name="padres">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Niños</th>
+                                    <td><select name="ninos">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Adultos</th>
+                                    <td><select name="adultos">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </div>
+                            <div>
+                                <tr>
+                                    <td><input type="button" name="button" id="button" value="Submit"></td>
+                                </tr>
+                            </div>
+                        </tbody>
+                    </div>
+                </table>
+            </form>
+        </section>
+        <section>
+            <table border="4">
+                <div>
+                    <thead>
+                        <tr>
+                            <th><h1>Datos de tarjeta</h1></th>
+                        </tr>
+                    </thead>
+                </div>
+                <div>
+                    <tbody>
+                        <div>
+                            <tr>
+                                <th>Tipo de tarjeta</th>
+                                <td><form action="" required>
+                                        <label for="visa"><img src="../assets/img/iconos/visa-logo-2.png" alt=""></label>
+                                        <input type="radio" name="visa" id="visa">
+                                        <label for="mastercard"><img src="../assets/img/iconos/Mastercard-Logo-2016-2020.png" alt=""></label>
+                                        <input type="radio" name="visa" id="mastercard">
+                                        <label for="american"><img src="../assets/img/iconos/purepng.com-american-express-logologobrand-logoiconslogos-251519940821gg0bn 1.png" alt=""></label>
+                                        <input type="radio" name="visa" id="american">
+                                    </form>
+                                </td>
+                            </tr>
+                        </div>
+                        <br>
+                        <div>
+                            <tr>
+                                <th>Número de tarjeta</th>
+                                <td><input type="text" name="targNumber" id="targNumber" placeholder="8876959534" required></td>
+                            </tr>
+                            <tr>
+                                <th>Nombre de titular</th>
+                                <td><input type="text" name="nombreTitular" id="nombreTitular" placeholder="Bob Esponja" required></td>
+                            </tr>
+                            <tr>
+                                <th>Fecha de vencimiento</th>
+                                <td>
+                                    <input type="text" name="fechaVencimiento" id="fechaVencimiento" placeholder="caída del liberalismo" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>CVV</th>
+                                    <td><input type="number" name="cvv" id="cvv" placeholder="420" required></td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr id="button">
+                                <td><input type="button" name="button" id="button" value="Comprar pasaje"></td>
+                            </tr>
+                        </div>
+                    </tbody>
+                </div>
+            </table>
+        </section>
+        <section>
+            <div>
+                <h2>Resumen de compra</h2>
+            </div>
+            <div>
+                <table border="4" id="show">
+                    <thead>
+                        <th>Pasaje</th>
+                        <td></td>
+                        <th>Destino</th>
+                        <th>Fecha Ida/Vuelta</th>
+                        <th>Precio</th>
+                    </thead>
+                </table><!-- acá iría el código para la transferencia de pasajes seleccionados y su precio total-->
+            </div>
+        </section>
+    </main>
+    <footer id="mainFooter">
+        <section class="footer">
+            <section>
+                <div>
+                    <ul>
+                        <li>Póngase en contacto</li>
+                        <li class="dt">Ginger.Ferry@gmail.com</li>
+                        <li class="dt">540-653-7422 x6238</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="../assets/img/iconos/divisor.png" alt="">
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#"><h4>Preguntas frecuentes</h4></a></li>
+                        <li><a href="#"><h4>Términos y condiciones</h4></a></li>
+                        <li><a href="#"><h4>Política de privacidad</h4></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h4>Redes sociales
+                    <div>
+                        <ul class="iconosRedes">
+                            <li><a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/iconos/youtube.png" alt="youtube"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/iconos/instagram.png" alt="instagram"></a></li>
+                            <li><a href="https://x.com/home" target="_blank"><img src="../assets/img/iconos/x.png" alt="x"></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/iconos/facebook.png" alt="facebook"></a></li>
+                        </ul>
+                    </div>
+                </h4>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

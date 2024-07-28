@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header*/
+.mainHeader{
+    background-color: rgb(0, 0, 0);
+    height: 6.875rem;
+}
+.header{
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    align-items: center;
+    padding: 1.875rem 6.25rem 1.875rem 6.25rem;
+}
+.header section{
+    display: flex;
+    gap: 3.125rem;
+}
+.header section div ul li{
+    list-style: none;
+}
+.header section div ul li a{
+    text-decoration: none;
+    color: white;
+}
+.explorar{
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+.explorar li a img{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-top: .25rem
+}
+.explorarVertical{
+    position: absolute;
+    display: none;
+    width: 9.375rem;
+    background-color: rgba(0, 0, 0, 0.705);
+    margin-left: -6.25rem;
+    text-align: center;
+    border-radius: .3125rem;
+}
+.explorar li:hover .explorarVertical{
+    display: block;
+}
+.explorarVertical li{
+    padding: .8125rem 1rem .8125rem 1rem;
+}
+.explorarVertical li:hover{
+    background-color: rgba(15, 15, 15, 0.281);
+}
+.masInfo{
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+}
+#inicio{
+    margin-left: 12.5rem;
+}
+#inicio li a img{
+    height: 40px;
+    width: 2.5rem;
+}
+/*main*/
+.titulo{
+    font-family: "Inter", sans-serif;
+    text-shadow: 0rem .1875rem .3125rem #2424247e;
+    background-image: url(/assets/img/wallpapers/1299437.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35.0625rem;
+    margin-top: -1.25rem;
+}
+.titulo div{
+    color: white;
+    margin-left: 6.25rem;
+    display: block;
+    font-weight: bold;
+    padding-top: 6.25rem;
+}
+.titulo div h1{
+    font-size: 7.5rem;
+    font-weight: bold;
+}
+.titulo h1 span{
+    display: block;
+}
+.titulo div h3{
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+/*sección destinos*/
+#destinos{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+    text-align: right;
+    margin: 1.875rem 18.75rem 0rem 0rem;
+}
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8.75rem;
+    margin-top: 3.125rem;
+    padding: 0rem 3.75rem 8.75rem 3.75rem;
+    justify-content: center;
+    gap: .9375rem
+}
+.card{
+    width: 15.625rem;
+    height: 18.75rem;
+    border-radius: .1875rem;
+    box-shadow: .3125rem .3125rem .3125rem #2424247e;
+}
+.card a img{
+    width: 100%;
+    height: 100%;
+    border-radius: .1875rem;
+}
+/* específicos */
+.mainKepler{
+    display: flex;
+    height: 70rem;
+    background-image: url(../assets/img/wallpapers/backgroundKepler.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+}
+.mainLuna{
+    display: flex;
+    height: 70rem;
+    background-image: url(../assets/img/wallpapers/backgroundLuna.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+}
+.mainMarte{
+    display: flex;
+    height: 70rem;
+    background-image: url(../assets/img/wallpapers/wallpaperMarte.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+}
+/* generales =3 */
+.xSection{
+    background-color: rgba(31, 19, 19, 0.473);
+    color: white;
+    text-align: center;
+    width: 62.5rem;
+    height: 1020px;
+    margin-top: 6.25rem;
+    border-radius: 1.25rem;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    padding: 3.125rem 6.25rem 0rem 6.25rem;
+}
+.nombreTitular{
+    font-size: 5rem;
+    flex-wrap: nowrap;
+}
+.desc div{
+    margin: .625rem;
+}
+.desc div ul li{
+    list-style: none;
+    font-size: 1.125rem;
+    font-weight: lighter;
+}
+.dias article{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    list-style: none;
+    align-items: center;
+}
+.dias article img{
+    width: 1.5625rem;
+    height: 1.5625rem;
+}
+.dias article p{
+    font-size: 1.0625rem;
+}
+.comprarPasaje a button{
+    padding: .9375rem 6.25rem .9375rem 6.25rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3.75rem;
+    border-style: none;
+    font-family: "Judson", serif;
+    font-size: 1.5625rem;
+    font-weight: bold;
+    margin: 4.375rem;
+}
+.galeria{
+    margin: 0rem 3.125rem;
+}
+.galeria div h2{
+    text-align: center;
+}
+.photos{
+    margin-top: .625rem;
+}
+.photos img{
+    margin: .3125rem .3125rem;
+    width: 50%;
+}
+/* footer */
+#mainFooter{
+    background-color: black;
+    height: 10.625rem;
+    padding: 1.875rem 6.25rem 1.875rem 6.25rem;
+}
+.footer{
+    color: white;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.footer section{
+    display: flex;
+    gap: 3.125rem;
+    align-items: center;
+}
+.dt{
+    font-weight: 400;
+    font-size: 1.0625rem;
+}
+.footer section div ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer section div ul li a{
+    text-decoration: none;
+    color: white;
+}
+.iconosRedes{
+    display: flex;
+    align-items: center;
+    gap: .625rem
+}
