@@ -73,36 +73,45 @@
     width: 2.5rem;
 }
 /*main*/
-.titulo{
+.main-title{
     font-family: "Inter", sans-serif;
     text-shadow: 0rem .1875rem .3125rem #2424247e;
     background-image: url(../assets/img/wallpapers/1299437.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 35.0625rem;
-    margin-top: -1.25rem;
+    height: 35.625rem;
 }
-.titulo div{
+.main-title div{
     color: white;
     margin-left: 6.25rem;
     display: block;
     font-weight: bold;
     padding-top: 6.25rem;
 }
-.titulo div h1{
+.main-title div h1{
     font-size: 7.5rem;
     font-weight: bold;
 }
-.titulo h1 span{
+.main-title h1 span{
     display: block;
 }
-.titulo div h3{
+.main-title div h3{
     margin-top: 20px;
     font-size: 2.5rem;
 }
-/*sección destinos*/
-#destinos{
+/* sección quiénes somos */
+.quienes-somos{
+    height: 35.625rem;
+    font-family: "Inter", sans-serif;
+    background-color: blueviolet;
+    margin: 0rem 18.75rem;
+}
+.us{
+
+}
+/*sección secundaria (general)*/
+.main-text{
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: xx-large;
@@ -116,7 +125,7 @@
     margin-top: 3.125rem;
     padding: 0rem 3.75rem 8.75rem 3.75rem;
     justify-content: center;
-    gap: .9375rem
+    gap: .9375rem;
 }
 .card{
     width: 15.625rem;
