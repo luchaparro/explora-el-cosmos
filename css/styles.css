@@ -74,62 +74,74 @@
 }
 /*main*/
 .main-title{
-    font-family: "Inter", sans-serif;
-    text-shadow: 0rem .1875rem .3125rem #2424247e;
+    height: 35.625rem;
     background-image: url(../assets/img/wallpapers/1299437.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 35.625rem;
 }
-.main-title div{
+.explora-el-cosmos-block{
+    font-family: "Inter", sans-serif;
+    text-shadow: 0rem .1875rem .3125rem #2424247e;
     color: white;
     margin-left: 6.25rem;
     display: block;
     font-weight: bold;
     padding-top: 6.25rem;
 }
-.main-title div h1{
+.explora-el-cosmos-block h1{
     font-size: 7.5rem;
     font-weight: bold;
 }
-.main-title h1 span{
+.explora-el-cosmos-block h1 span{
     display: block;
 }
-.main-title div h3{
+.explora-el-cosmos-block h3{
     margin-top: 20px;
     font-size: 2.5rem;
 }
-/* sección quiénes somos */
+/* sección con etiquetas genéricas */
+.main-section{
+    height: 34.375rem;
+    margin: 1.875rem 18.75rem 1.875rem 18.75rem;
+}
+/* modelado de sección quiénes somos*/
 .quienes-somos{
-    height: 35.625rem;
     font-family: "Inter", sans-serif;
-    background-color: blueviolet;
-    margin: 0rem 18.75rem;
+    background-color: rgba(14, 14, 14, 1);
+    color: white;
 }
 .us{
-
+    display: flex;
+    justify-content: space-evenly;
 }
-/*sección secundaria (general)*/
-.main-text{
+.conocer-mas{
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+.fotos{
+    display: flex;
+}
+.fotos article img{
+    height: 25rem;
+}
+/*modelado de sección destinos*/
+.destinos-text{
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: xx-large;
     text-align: right;
-    margin: 1.875rem 18.75rem 0rem 0rem;
 }
 .contenedor-cards{
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 8.75rem;
-    margin-top: 3.125rem;
-    padding: 0rem 3.75rem 8.75rem 3.75rem;
-    justify-content: center;
     gap: .9375rem;
+    justify-content: space-between;
 }
 .card{
-    width: 15.625rem;
-    height: 18.75rem;
+    width: 13.75rem;
+    height: 16.875rem;
     border-radius: .1875rem;
     box-shadow: .3125rem .3125rem .3125rem #2424247e;
 }
