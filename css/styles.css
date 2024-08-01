@@ -9,14 +9,14 @@
 /*header*/
 .mainHeader{
     background-color: rgb(0, 0, 0);
-    height: 6.875rem;
+    height: 5.625rem;
 }
 .header{
     color: white;
     font-weight: 700;
     font-size: 1.125rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: "Inter", sans-serif;
     align-items: center;
     padding: 1.875rem 6.25rem 1.875rem 6.25rem;
@@ -40,7 +40,6 @@
 .explorar li a img{
     height: 1.25rem;
     width: 1.25rem;
-    margin-top: .25rem
 }
 .explorarVertical{
     position: absolute;
@@ -75,10 +74,10 @@
 /*main*/
 .main-title{
     height: 35.625rem;
-    background-image: url(../assets/img/wallpapers/1299437.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-image: url(../assets/img/wallpapers/1299437\ 1.png);
 }
 .explora-el-cosmos-block{
     font-family: "Inter", sans-serif;
@@ -87,68 +86,75 @@
     margin-left: 6.25rem;
     display: block;
     font-weight: bold;
-    padding-top: 6.25rem;
+    letter-spacing: -0.1875rem;
 }
 .explora-el-cosmos-block h1{
-    font-size: 7.5rem;
+    padding-top: 5rem;
+    font-size: 6.25rem;
     font-weight: bold;
 }
 .explora-el-cosmos-block h1 span{
     display: block;
 }
 .explora-el-cosmos-block h3{
-    margin-top: 20px;
-    font-size: 2.5rem;
+    font-size: 1.0625rem;
+    font-weight: 300;
+    letter-spacing: -0.0625rem;
+    width: 36.25rem;
 }
-/* sección con etiquetas genéricas */
+.explora-el-cosmos-block h3 span{
+    font-weight: 500;
+}
+.explora-el-cosmos-block button{
+    margin-top: 1.875rem;
+    padding: .9375rem;
+    border: 0;
+    border-color: rgb(82, 149, 97);
+    border-radius: 1.25rem;
+    font-family: "Inter", sans-serif;
+    background-color: rgb(82, 149, 97);
+    color: white;
+    font-weight: 700;
+    font-size: large;
+}
+/* sección landing page genérico =3 */
 .main-section{
     height: 34.375rem;
-    margin: 1.875rem 18.75rem 1.875rem 18.75rem;
+    padding: 2.5rem 18.75rem 2.5rem 18.75rem;
+    font-family: "Inter", sans-serif;
 }
 /* modelado de sección quiénes somos*/
-.quienes-somos{
-    font-family: "Inter", sans-serif;
-    background-color: rgba(14, 14, 14, 1);
-    color: white;
+/*sección landing page específico =3*/
+.destinos-text{
+    font-size: 2.5rem;
 }
-.us{
-    display: flex;
-    justify-content: space-evenly;
-}
-.conocer-mas{
+.conocer-mas a{
+    text-decoration: none;
+    color: black;
     display: flex;
     align-items: center;
+    justify-content: right;
     gap: .625rem;
+    font-size: large;
 }
-.fotos{
-    display: flex;
-}
-.fotos article img{
-    height: 25rem;
-}
-/*modelado de sección destinos*/
-.destinos-text{
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: xx-large;
-    text-align: right;
+.conocer-mas img{
+    height: 1.5625rem;
 }
 .contenedor-cards{
     display: flex;
     flex-wrap: wrap;
-    gap: .9375rem;
+    align-content: end;
     justify-content: space-between;
 }
 .card{
-    width: 13.75rem;
-    height: 16.875rem;
-    border-radius: .1875rem;
-    box-shadow: .3125rem .3125rem .3125rem #2424247e;
+    width: 230px;
+    height: 17.5rem;
+    margin-top: .625rem;
 }
 .card a img{
     width: 100%;
     height: 100%;
-    border-radius: .1875rem;
+    border-radius: .625rem;
 }
 /* específicos */
 .mainKepler{
