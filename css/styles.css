@@ -72,14 +72,6 @@
     width: 2.5rem;
 }
 /*main*/
-.main-title{
-    height: 35.625rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../assets/img/wallpapers/1299437\ 1.png);
-    font-family: "Inter", sans-serif;
-}
 .explora-el-cosmos-block{
     color: white;
     margin-left: 6.25rem;
@@ -116,7 +108,24 @@
     font-weight: 700;
     font-size: large;
 }
+.multimedia{
+    text-align: right;
+    margin-right: 6.25rem;
+    color: white;
+    padding-top: 15.625rem;
+}
+.multimedia h1{
+
+}
 /* sección landing page genérico =3 */
+.main-title{
+    height: 35.625rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../assets/img/wallpapers/1299437\ 1.png);
+    font-family: "Inter", sans-serif;
+}
 .main-section{
     height: 34.375rem;
     padding: 2.5rem 18.75rem 2.5rem 18.75rem;
@@ -135,6 +144,7 @@
     justify-content: right;
     gap: .625rem;
     font-size: large;
+    font-family: "Inter", sans-serif;
 }
 .conocer-mas img{
     height: 1.5625rem;
