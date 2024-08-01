@@ -78,10 +78,9 @@
     background-size: cover;
     background-position: center;
     background-image: url(../assets/img/wallpapers/1299437\ 1.png);
+    font-family: "Inter", sans-serif;
 }
 .explora-el-cosmos-block{
-    font-family: "Inter", sans-serif;
-    text-shadow: 0rem .1875rem .3125rem #2424247e;
     color: white;
     margin-left: 6.25rem;
     display: block;
@@ -121,13 +120,13 @@
 .main-section{
     height: 34.375rem;
     padding: 2.5rem 18.75rem 2.5rem 18.75rem;
+}
+.seccion-text{
+    font-size: 2.1875rem;
     font-family: "Inter", sans-serif;
 }
 /* modelado de sección quiénes somos*/
 /*sección landing page específico =3*/
-.destinos-text{
-    font-size: 2.5rem;
-}
 .conocer-mas a{
     text-decoration: none;
     color: black;
@@ -154,7 +153,7 @@
 .card a img{
     width: 100%;
     height: 100%;
-    border-radius: .625rem;
+    border-radius: 1.25rem;
 }
 /* específicos */
 .mainKepler{
