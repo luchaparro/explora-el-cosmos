@@ -47,8 +47,8 @@
     width: 9.375rem;
     background-color: rgba(0, 0, 0, 0.705);
     margin-left: -6.25rem;
-    text-align: center;
     border-radius: .3125rem;
+    text-align: left;
 }
 .explorar li:hover .explorarVertical{
     display: block;
@@ -74,11 +74,10 @@
 /*main*/
 .explora-el-cosmos-block{
     color: white;
-    margin-left: 6.25rem;
-    display: block;
+    margin: 0rem 6.25rem;
     font-weight: bold;
     letter-spacing: -0.1875rem;
-}
+}   
 .explora-el-cosmos-block h1{
     padding-top: 5rem;
     font-size: 6.25rem;
@@ -87,13 +86,13 @@
 .explora-el-cosmos-block h1 span{
     display: block;
 }
-.explora-el-cosmos-block h3{
+.description{
     font-size: 1.0625rem;
     font-weight: 300;
     letter-spacing: -0.0625rem;
     width: 36.25rem;
 }
-.explora-el-cosmos-block h3 span{
+.description span{
     font-weight: 500;
 }
 .explora-el-cosmos-block button{
@@ -107,15 +106,33 @@
     color: white;
     font-weight: 700;
     font-size: large;
+    cursor: pointer;
 }
-.multimedia{
+.multimedia-block-main-title{
+    height: 40.625rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../assets/img/wallpapers/Rectangle\ 51.png);
+    font-family: "Inter", sans-serif;
+}
+.multimedia-block{
     text-align: right;
-    margin-right: 6.25rem;
+    margin: 0rem 6.25rem;
     color: white;
-    padding-top: 15.625rem;
+    padding-top: 400px;
+    letter-spacing: -0.1875rem;
 }
-.multimedia h1{
-
+.multimedia-block h1{
+    font-size: 5rem;
+}
+.multimedia-block h3{
+    font-size: 1.0625rem;
+    font-weight: 300;
+    letter-spacing: -0.0625rem;
+}
+.multimedia-block h3 span{
+    display: block;
 }
 /* sección landing page genérico =3 */
 .main-title{
@@ -129,12 +146,24 @@
 .main-section{
     height: 34.375rem;
     padding: 2.5rem 18.75rem 2.5rem 18.75rem;
-}
-.seccion-text{
-    font-size: 2.1875rem;
+    background-color: rgb(235, 235, 235);
     font-family: "Inter", sans-serif;
 }
-/* modelado de sección quiénes somos*/
+.foto-1{
+    background-color: rgb(255, 238, 127);
+}
+.foto-2{
+    background-color: rgb(255, 146, 127);
+}
+.foto-3{
+    background-color: rgb(127, 212, 255);
+}
+.foto-4{
+    background-color: rgb(236, 127, 255);
+}
+.foto-5{
+    background-color: rgb(174, 255, 127);
+}
 /*sección landing page específico =3*/
 .conocer-mas a{
     text-decoration: none;
@@ -151,7 +180,7 @@
 }
 .contenedor-cards{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: end;
     justify-content: space-between;
 }
@@ -164,6 +193,34 @@
     width: 100%;
     height: 100%;
     border-radius: 1.25rem;
+}
+.grids{
+    gap: .625rem .625rem;
+    width: 100%;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 15.625rem 43.75rem 15.625rem;
+    grid-template-rows: 12.5rem 12.5rem;
+    grid-template-areas: 
+    "s1 s5 s2"
+    "s3 s5 s4"
+    ;
+    ;
+}
+.s1{
+    grid-area: s1;
+}
+.s2{
+    grid-area: s2;
+}
+.s3{
+    grid-area: s3;
+}
+.s4{
+    grid-area: s4;
+}
+.s5{
+    grid-area: s5;
 }
 /* específicos */
 .mainKepler{
