@@ -20,6 +20,7 @@
     font-family: "Inter", sans-serif;
     align-items: center;
     padding: 1.875rem 6.25rem 1.875rem 6.25rem;
+    letter-spacing: -0.0313rem;
 }
 .header section{
     display: flex;
@@ -72,11 +73,20 @@
     width: 2.5rem;
 }
 /*main*/
+.main-title{
+    height: 35.625rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../assets/img/wallpapers/1299437\ 1.png);
+    font-family: "Inter", sans-serif;
+}
 .explora-el-cosmos-block{
     color: white;
     margin: 0rem 6.25rem;
     font-weight: bold;
     letter-spacing: -0.1875rem;
+    text-align: center;
 }   
 .explora-el-cosmos-block h1{
     padding-top: 5rem;
@@ -86,11 +96,17 @@
 .explora-el-cosmos-block h1 span{
     display: block;
 }
+.main-section{
+    height: 34.375rem;
+    padding: 2.5rem 12.5rem 2.5rem 12.5rem;
+    background-color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+}
 .description{
     font-size: 1.0625rem;
     font-weight: 300;
     letter-spacing: -0.0625rem;
-    width: 36.25rem;
+    padding: 0px 15.625rem;
 }
 .description span{
     font-weight: 500;
@@ -135,77 +151,46 @@
     display: block;
 }
 /* sección landing page genérico =3 */
-.main-title{
-    height: 35.625rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../assets/img/wallpapers/1299437\ 1.png);
-    font-family: "Inter", sans-serif;
-}
-.main-section{
-    height: 34.375rem;
-    padding: 2.5rem 18.75rem 2.5rem 18.75rem;
-    background-color: rgb(235, 235, 235);
-    font-family: "Inter", sans-serif;
-}
-.foto-1{
-    background-color: rgb(255, 238, 127);
-}
-.foto-2{
-    background-color: rgb(255, 146, 127);
-}
-.foto-3{
-    background-color: rgb(127, 212, 255);
-}
-.foto-4{
-    background-color: rgb(236, 127, 255);
-}
-.foto-5{
-    background-color: rgb(174, 255, 127);
-}
 /*sección landing page específico =3*/
 .conocer-mas a{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
-    justify-content: right;
-    gap: .625rem;
-    font-size: large;
+    font-size: 1.875rem;
     font-family: "Inter", sans-serif;
 }
 .conocer-mas img{
-    height: 1.5625rem;
+    height: 1.875rem;
 }
 .contenedor-cards{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: end;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .card{
-    width: 230px;
-    height: 17.5rem;
-    margin-top: .625rem;
+    width: 15.625rem;
+    height: 21.875rem;
 }
 .card a img{
     width: 100%;
     height: 100%;
-    border-radius: 1.25rem;
 }
 .grids{
-    gap: .625rem .625rem;
-    width: 100%;
-    background-color: aqua;
     display: grid;
-    grid-template-columns: 15.625rem 43.75rem 15.625rem;
-    grid-template-rows: 12.5rem 12.5rem;
+    grid-template-columns: 17.5rem 25rem 17.5rem;
+    grid-template-rows: repeat(2, 13.125rem);
     grid-template-areas: 
-    "s1 s5 s2"
-    "s3 s5 s4"
+        "s1 s5 s3"
+        "s4 s5 s2"
     ;
-    ;
+    gap: .625rem;
+}
+.grids div img{
+    width: 100%;
+    height: 100%;
+    border-radius: .3125rem;
 }
 .s1{
     grid-area: s1;
@@ -221,7 +206,30 @@
 }
 .s5{
     grid-area: s5;
+
 }
+.galeria-completa{
+    color: rgba(0, 0, 0, 0.952);
+    display: flex;
+    align-items: start;
+    margin-left: 2.5rem;
+    font-size: 3.125rem;
+    display: block;
+    letter-spacing: -0.1875rem;
+}
+.galeria.galeria-completa img{
+}
+.grids-2{
+    height: 34.375rem;
+    padding: 2.5rem 12.5rem 2.5rem 12.5rem;
+    background-color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    display: grid;
+    grid-template-areas:
+    "grids galeria-completa"
+    ;
+}
+
 /* específicos */
 .mainKepler{
     display: flex;
