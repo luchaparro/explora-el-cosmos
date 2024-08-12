@@ -1,0 +1,78 @@
+/*específicos*/
+.mainKepler{
+    display: flex;
+    height: 70rem;
+    background-image: url(../assets/img/wallpapers/backgroundKepler.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+}
+
+.mainLuna{
+    @extend .mainKepler;
+    background-image: url(../../assets/img/wallpapers/backgroundLuna.png);
+}
+
+.mainMarte{
+    @extend .mainKepler;
+    background-image: url(../../assets/img/wallpapers/wallpaperMarte.png);
+}
+/* generales =3 */
+.xSection{
+    background-color: rgba(31, 19, 19, 0.473);
+    color: white;
+    text-align: center;
+    width: 62.5rem;
+    height: 1020px;
+    margin-top: 6.25rem;
+    border-radius: 1.25rem;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    padding: 3.125rem 6.25rem 0rem 6.25rem;
+}
+.nombreTitular{
+    font-size: 5rem;
+    flex-wrap: nowrap;
+}
+.desc{
+    div{
+        margin: .625rem;
+        ul{
+            li{
+                font-size: 1.125rem;
+                font-weight: lighter;
+            }
+        }
+    }
+    article{
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        list-style: none;
+        align-items: center;
+        img{
+            width: 1.5625rem;
+            height: 1.5625rem;
+        }
+        p{
+            font-size: 1.0625rem;
+        }
+    }
+}
+
+.galeria{
+    margin: 0rem 3.125rem;
+    div{
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+.photos{
+    margin-top: .625rem;
+    img{
+        margin: .3125rem .3125rem;
+        width: 50%;
+    }
+}

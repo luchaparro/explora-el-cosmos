@@ -1,0 +1,30 @@
+.comprarPasaje{
+    a{
+        button{
+            padding: .9375rem 6.25rem .9375rem 6.25rem;
+            background-color: rgb(255, 255, 255);
+            border-radius: 3.75rem;
+            border-style: none;
+            font-family: "Judson", serif;
+            font-size: 1.5625rem;
+            font-weight: bold;
+            margin: 4.375rem;
+        }
+    }
+}
+
+.explora-el-cosmos-block{
+    button{
+        margin: 5%;
+        padding: .9375rem;
+        border: 0;
+        border-color: rgb(82, 149, 97);
+        border-radius: 1.25rem;
+        font-family: "Inter", sans-serif;
+        background-color: rgb(82, 149, 97);
+        color: white;
+        font-weight: 700;
+        font-size: large;
+        cursor: pointer;
+    }
+}

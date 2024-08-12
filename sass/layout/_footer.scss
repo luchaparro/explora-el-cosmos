@@ -1,0 +1,24 @@
+#mainFooter{
+    background-color: black;
+    height: 16.875rem;
+    padding: 1.875rem 6.25rem 1.875rem 6.25rem;
+}
+
+.footer{
+    color: white;
+    display: block;
+    font-family: "Judson", serif;
+    font-size: 1.125rem;
+    div{
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 1.875rem;
+            li{
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}

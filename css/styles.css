@@ -1,10 +1,35 @@
 @charset "UTF-8";
+/*primero se llama a utilities*/
+/*segundo se llama a base*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Serif+Text:ital@0;1&family=Nova+Flat&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+li {
+  list-style: none; }
+  li a {
+    text-decoration: none; }
+
+/*tercero se llama a layout*/
+#mainFooter {
+  background-color: black;
+  height: 16.875rem;
+  padding: 1.875rem 6.25rem 1.875rem 6.25rem; }
+
+.footer {
+  color: white;
+  display: block;
+  font-family: "Judson", serif;
+  font-size: 1.125rem; }
+  .footer div ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.875rem; }
+    .footer div ul li a {
+      color: white; }
 
 .mainHeader {
   height: 5.625rem;
@@ -38,8 +63,19 @@
   .explorar div li a img {
     height: 1.25rem;
     width: 1.25rem; }
-  .explorar div li:hover .explorar.Vertical {
-    display: block; }
+
+.explorarVertical {
+  position: absolute;
+  display: none;
+  width: 9.375rem;
+  background-color: rgba(0, 0, 0, 0.705);
+  margin-left: -6.25rem;
+  border-radius: .3125rem;
+  text-align: left; }
+  .explorarVertical li {
+    padding: .8125rem 1rem .8125rem 1rem; }
+    .explorarVertical li:hover {
+      background-color: rgba(15, 15, 15, 0.281); }
 
 .explorarVertical {
   position: absolute;
@@ -63,11 +99,10 @@
   height: 2.5rem;
   width: 2.5rem; }
 
-/*main*/
 .main-title {
   height: 37.5rem;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(to bottom, rgba(3, 8, 11, 0.041) 80%, #03080b), url(/assets/img/wallpapers/wallpaper-inicio.png);
+  background: linear-gradient(to bottom, rgba(3, 8, 11, 0.041) 89%, #03080b), url(/assets/img/wallpapers/1299437.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover; }
@@ -84,18 +119,6 @@
     font-weight: bold; }
     .explora-el-cosmos-block h1 span {
       display: block; }
-  .explora-el-cosmos-block button {
-    margin: 5%;
-    padding: .9375rem;
-    border: 0;
-    border-color: #529561;
-    border-radius: 1.25rem;
-    font-family: "Inter", sans-serif;
-    background-color: #529561;
-    color: white;
-    font-weight: 700;
-    font-size: large;
-    cursor: pointer; }
 
 .description {
   font-size: 1.0625rem;
@@ -159,12 +182,10 @@
     margin: -20px 1.5625rem 0rem 1.5625rem;
     border-radius: .5rem;
     mask-image: linear-gradient(black 79%, transparent); }
-  .card ul {
-    list-style: none; }
-    .card ul li {
-      font-family: "Inter", sans-serif;
-      margin: .625rem 1.5625rem;
-      font-size: 1.5625rem; }
+  .card ul li {
+    font-family: "Inter", sans-serif;
+    margin: .625rem 1.5625rem;
+    font-size: 1.5625rem; }
 
 .grids {
   display: grid;
@@ -201,7 +222,7 @@
   margin-top: 1%; }
 
 /*específicos*/
-.mainKepler {
+.mainKepler, .mainLuna, .mainMarte {
   display: flex;
   height: 70rem;
   background-image: url(../assets/img/wallpapers/backgroundKepler.png);
@@ -210,20 +231,10 @@
   justify-content: space-around; }
 
 .mainLuna {
-  display: flex;
-  height: 70rem;
-  background-image: url(../assets/img/wallpapers/backgroundLuna.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: space-around; }
+  background-image: url(../../assets/img/wallpapers/backgroundLuna.png); }
 
 .mainMarte {
-  display: flex;
-  height: 70rem;
-  background-image: url(../assets/img/wallpapers/wallpaperMarte.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: space-around; }
+  background-image: url(../../assets/img/wallpapers/wallpaperMarte.png); }
 
 /* generales =3 */
 .xSection {
@@ -245,7 +256,6 @@
 .desc div {
   margin: .625rem; }
   .desc div ul li {
-    list-style: none;
     font-size: 1.125rem;
     font-weight: lighter; }
 
@@ -261,16 +271,6 @@
   .desc article p {
     font-size: 1.0625rem; }
 
-.comprarPasaje a button {
-  padding: .9375rem 6.25rem .9375rem 6.25rem;
-  background-color: white;
-  border-radius: 3.75rem;
-  border-style: none;
-  font-family: "Judson", serif;
-  font-size: 1.5625rem;
-  font-weight: bold;
-  margin: 4.375rem; }
-
 .galeria {
   margin: 0rem 3.125rem; }
   .galeria div h2 {
@@ -282,23 +282,31 @@
     margin: .3125rem .3125rem;
     width: 50%; }
 
-/*footer*/
-#mainFooter {
-  background-color: black;
-  height: 16.875rem;
-  padding: 1.875rem 6.25rem 1.875rem 6.25rem; }
-
-.footer {
-  color: white;
-  display: block;
+/*cuarto se llaman a componentes*/
+.comprarPasaje a button {
+  padding: .9375rem 6.25rem .9375rem 6.25rem;
+  background-color: white;
+  border-radius: 3.75rem;
+  border-style: none;
   font-family: "Judson", serif;
-  font-size: 1.125rem; }
-  .footer div ul {
-    display: flex;
-    justify-content: center;
-    gap: 1.875rem; }
-    .footer div ul li {
-      list-style: none; }
-      .footer div ul li a {
-        text-decoration: none;
-        color: white; }
+  font-size: 1.5625rem;
+  font-weight: bold;
+  margin: 4.375rem; }
+
+.explora-el-cosmos-block button {
+  margin: 5%;
+  padding: .9375rem;
+  border: 0;
+  border-color: #529561;
+  border-radius: 1.25rem;
+  font-family: "Inter", sans-serif;
+  background-color: #529561;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+  cursor: pointer; }
+
+/*siempre al final se llama a media queries*/
+/*si estamos en desktop a mobile, DECRECIENTE
+    si estamos en mobile a desktop, CRECIENTE
+*/
