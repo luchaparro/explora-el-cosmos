@@ -28,7 +28,7 @@
     border-radius: 1.25rem;
     font-family: "Inter", sans-serif;
     font-weight: bold;
-    padding: 3.125rem 6.25rem 0rem 6.25rem;
+    padding: 3.125rem;
 }
 .nombreTitular{
     font-size: 5rem;
@@ -61,7 +61,6 @@
 }
 
 .galeria{
-    margin: 0rem 3.125rem;
     div{
         h2{
             text-align: center;
@@ -71,8 +70,13 @@
 
 .photos{
     margin-top: .625rem;
-    img{
-        margin: .3125rem .3125rem;
-        width: 50%;
+    margin-left: 8.125rem;
+    div{
+        display: flex;
+        img{
+            margin: .3125rem .3125rem;
+            width: 40%;
+            display: flex;
+        }
     }
 }

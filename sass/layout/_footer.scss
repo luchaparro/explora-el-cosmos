@@ -1,24 +1,27 @@
-#mainFooter{
-    background-color: black;
+#mainFooter {
+    background-color: #000; // Usar color hex para mayor consistencia
     height: 16.875rem;
-    padding: 1.875rem 6.25rem 1.875rem 6.25rem;
+    padding: 1.875rem 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.footer{
-    color: white;
-    display: block;
-    font-family: "Judson", serif;
+.footer {
+    color: #fff;
+    font-family: "Inter", sans-serif;
     font-size: 1.125rem;
     div{
-        ul{
-            display: flex;
-            justify-content: center;
-            gap: 1.875rem;
-            li{
-                a{
-                    color: white;
-                }
+        text-align: center;
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 1.875rem;
+        a{
+            color: #fff;
+            &:hover {
+                text-decoration: underline; 
             }
+        }
         }
     }
 }

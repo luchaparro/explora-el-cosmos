@@ -22,6 +22,10 @@
             display: block;
         }
     }
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .description{
@@ -108,6 +112,13 @@
         }
     }
 }
+
+.contenedor-galeria{
+    width: 70%;
+    height: 2000px;
+    margin-left: 6.25rem;
+}   
+
 .grids{
     display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -116,7 +127,7 @@
         "s1 s5 s3"
         "s4 s5 s2"
     ;
-    gap: .625rem;
+    gap: 3%;
     div{
         img{
             width: 100%;
@@ -140,13 +151,4 @@
 }
 .s5{
     grid-area: s5;
-}
-
-.contenedor-galeria{
-    font-family: "Inter", sans-serif;
-    display: flex;
-    height: 45%;
-    width: 50%;
-    margin-left: 14%;
-    margin-top: 1%;
 }
